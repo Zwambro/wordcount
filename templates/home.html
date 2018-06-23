@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">Homepage</a>
+            <a href="{% url 'about' %}">about us</a>
+        </li>
+    </ul>
+    <h1>WORD COUNT</h1>
+    <form action="{% url 'count' %}">
+        <textarea name="fulltext" id="" cols="40" rows="10"></textarea><br>
+        <input type="submit" value="COUNT!">
+    </form>
+</body>
+</html>
